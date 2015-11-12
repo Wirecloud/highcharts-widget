@@ -1,0 +1,16 @@
+{
+    "name": "highcharts-widget",
+    "dependencies": {
+        "jquery": null,
+        "highcharts": "~4.1.9"
+    },
+    "devDependencies": {},
+    "exportsOverride": {
+        "jquery": {
+            "js": "dist/jquery.min.js"
+        },
+        "highcharts": {
+            "js": "highcharts.js"
+        }
+    }
+}
