@@ -10,7 +10,7 @@
             "js": "dist/jquery.min.js"
         },
         "highcharts": {
-            "js": "highcharts.js"
+            "js": ["highcharts.js", "highcharts-3d.js", "highcharts-more.js", "modules/data.js", "modules/drilldown.js"]
         }
     }
 }

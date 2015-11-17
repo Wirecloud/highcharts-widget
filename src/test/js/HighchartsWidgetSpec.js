@@ -14,14 +14,14 @@
     };
 
     describe("Test HighchartsWidget", function () {
-        var widget;
+        // var widget;
         beforeAll(function () {
             window.MashupPlatform = new MockMP.MockMP();
         });
 
         beforeEach(function () {
             MashupPlatform.reset();
-            widget = new HighchartsWidget();
+            //widget = new HighchartsWidget();
         });
 
         it("Dummy test", function () {
