@@ -5,9 +5,9 @@
     <homepage>https://github.com/Wirecloud/highcharts-widget</homepage>
     <authors>Miguel Garcia Lafuente</authors>
     <email>miguelglafuente@gmail.com</email>
-    <image></image>
+    <image>images/catalogue.png</image>
     <smartphoneimage></smartphoneimage>
-    <description>Highcharts Widget</description>
+    <description>Chart Viewer. Uses Highchart API.</description>
     <longdescription>DESCRIPTION.md</longdescription>
     <changelog>doc/changelog.md</changelog>
     <doc>doc/index.md</doc>
