@@ -1,29 +1,25 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<widget xmlns="http://wirecloud.conwet.fi.upm.es/ns/macdescription/1" vendor="CoNWeT" name="Highcharts-widget" version="0.1.0">
-  <details>
-    <title>HighCharts Widget</title>
-    <homepage>https://github.com/Wirecloud/highcharts-widget</homepage>
-    <authors>Miguel Garcia Lafuente</authors>
-    <email>miguelglafuente@gmail.com</email>
-    <image>images/catalogue.png</image>
-    <smartphoneimage></smartphoneimage>
-    <description>Chart Viewer. Uses Highchart API.</description>
-    <longdescription>DESCRIPTION.md</longdescription>
-    <changelog>doc/changelog.md</changelog>
-    <doc>doc/index.md</doc>
-    <license>CC,BY-NC,3.0</license>
-    <issuetracker>https://github.com/Wirecloud/highcharts-widget/issues</issuetracker>
-  </details>
+<widget xmlns="http://wirecloud.conwet.fi.upm.es/ns/macdescription/1" vendor="CoNWeT" name="highcharts" version="0.1.0">
+    <details>
+        <title>HighCharts Widget</title>
+        <homepage>https://github.com/Wirecloud/highcharts-widget</homepage>
+        <authors>Miguel Garcia Lafuente &lt;mgarcia@conwet.com&gt;</authors>
+        <email>wirecloud@conwet.com</email>
+        <image>images/catalogue.png</image>
+        <smartphoneimage></smartphoneimage>
+        <description>Chart Viewer. Uses Highchart API.</description>
+        <longdescription>DESCRIPTION.md</longdescription>
+        <changelog>doc/changelog.md</changelog>
+        <doc>doc/index.md</doc>
+        <license>CC,BY-NC,3.0</license>
+        <issuetracker>https://github.com/Wirecloud/highcharts-widget/issues</issuetracker>
+    </details>
 
-  <requirements>
+    <wiring>
+        <inputendpoint name="options" type="text" label="Options" description="Highcharts Options" friendcode="highchart-options"/>
+    </wiring>
 
-  </requirements>
+    <contents src="index.html"/>
+    <rendering height="300px" width="300px"/>
 
-  <preferences>
-  </preferences>
-  <wiring>
-    <inputendpoint name="options" type="text" label="Options" description="Highcharts Options" friendcode="highchart-options"/>
-  </wiring>
-  <contents src="index.html"/>
-  <rendering height="47" width="10"/>
 </widget>
