@@ -4,8 +4,13 @@ window.onload = function () {
 
     $("#container").highcharts({});
 
-    MashupPlatform.wiring.registerCallback("options", function (data) {
+    MashupPlatform.wiring.registerCallback("highcharts", function (data) {
         var jdata = JSON.parse(data);
         $("#container").highcharts(jdata);
+    });
+
+    MashupPlatform.wiring.registerCallback("highstock", function (data) {
+        var jdata = JSON.parse(data);
+        $("#container").highcharts("StockChart", jdata);
     });
 };

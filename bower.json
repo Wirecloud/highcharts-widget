@@ -2,7 +2,7 @@
     "name": "highcharts-widget",
     "dependencies": {
         "jquery": null,
-        "highcharts": "~4.1.9"
+        "highcharts": "~4.2.1"
     },
     "devDependencies": {},
     "exportsOverride": {
@@ -10,7 +10,14 @@
             "js": "dist/jquery.min.js"
         },
         "highcharts": {
-            "js": ["highcharts.js", "highcharts-3d.js", "highcharts-more.js", "modules/data.js", "modules/drilldown.js"]
+            "js": [
+                "highcharts.js",
+                "highcharts-3d.js",
+                "highcharts-more.js",
+                "highstock.js",
+                "modules/data.js",
+                "modules/drilldown.js"
+            ]
         }
     }
 }
