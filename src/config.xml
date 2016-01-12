@@ -18,6 +18,7 @@
     <wiring>
       <inputendpoint name="highcharts" type="text" label="Highcharts Options" description="Highcharts Options" friendcode="highchart-options"/>
       <inputendpoint name="highstock" type="text" label="Highstock Options" description="Highstock Options" friendcode="highstock-options"/>
+      <outputendpoint name="selected" type="text" label="Selected data output" description="Send the data when it's clicked" friendcode="selected-data"/>
     </wiring>
 
     <contents src="index.html"/>
