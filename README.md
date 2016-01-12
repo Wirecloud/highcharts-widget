@@ -43,7 +43,7 @@ If everything goes well, you will find a wgt file in the `dist` folder.
 
 ## Settings
 
-`Write here the preferences`
+`No settings`
 
 ## Wiring
 
