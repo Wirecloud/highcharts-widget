@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <widget xmlns="http://wirecloud.conwet.fi.upm.es/ns/macdescription/1" vendor="CoNWeT" name="highcharts" version="0.1.0">
     <details>
-        <title>HighCharts Widget</title>
+        <title>Highcharts</title>
         <homepage>https://github.com/Wirecloud/highcharts-widget</homepage>
         <authors>Miguel Garcia Lafuente &lt;mgarcia@conwet.com&gt;</authors>
         <email>wirecloud@conwet.com</email>
         <image>images/catalogue.png</image>
         <smartphoneimage></smartphoneimage>
-        <description>Chart Viewer. Uses Highchart API.</description>
+        <description>Create interactive charts/graphs using the Highcharts framework</description>
         <longdescription>DESCRIPTION.md</longdescription>
         <changelog>doc/changelog.md</changelog>
         <doc>doc/index.md</doc>
