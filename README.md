@@ -59,9 +59,9 @@ If everything goes well, you will find a wgt file in the `dist` folder.
 
 ### Output Endpoints
 
-- `selected`: When the user click a point the data will be sended.
+- `selected`: When the user click a point the data will be sent.
 
-    Data sended:
+    Data sent:
 
     ```
     {
@@ -72,9 +72,20 @@ If everything goes well, you will find a wgt file in the `dist` folder.
     }
     ```
 
+- `selectedFilters`: When the user clicks a point filter data will be sent.
+
 ## Usage
 
-The only one limitation right now are that you can't send functions (formatters, events, ...) because the wiring only send Strings
+The only one limitation right now are that you can't send functions (formatters, events, ...) because the wiring only send Strings.
+
+The input of this widget may have a the dataHandler property which is a function used to define the selectedFilters output.
+
+    Example:
+    ```
+    function dataHandler (clickData) {
+        return clickData.x;
+    }
+    ```
 
 ## Reference
 

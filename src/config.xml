@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<widget xmlns="http://wirecloud.conwet.fi.upm.es/ns/macdescription/1" vendor="CoNWeT" name="highcharts" version="0.1.0">
+<widget xmlns="http://wirecloud.conwet.fi.upm.es/ns/macdescription/1" vendor="CoNWeT" name="highcharts" version="0.1.1">
     <details>
         <title>Highcharts</title>
         <homepage>https://github.com/Wirecloud/highcharts-widget</homepage>
@@ -18,7 +18,9 @@
     <wiring>
       <inputendpoint name="highcharts" type="text" label="Highcharts Options" description="Highcharts Options" friendcode="highchart-options"/>
       <inputendpoint name="highstock" type="text" label="Highstock Options" description="Highstock Options" friendcode="highstock-options"/>
+
       <outputendpoint name="selected" type="text" label="Selected data output" description="Send the data when it's clicked" friendcode="selected-data"/>
+      <outputendpoint name="selectedFilters" type="text" label="Selected data filters output" description="Filters to apply in order to retriver the source data" friendcode="condition-list"/>
     </wiring>
 
     <contents src="index.html"/>

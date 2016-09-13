@@ -85,9 +85,9 @@ Highcharts Widget
 
 ### Output Endpoints
 
-- `selected`: When the user click a point the data will be sended.
+- `selected`: When the user click a point the data will be sent.
 
-    Data sended:
+    Data sent:
 
     ```
     {
@@ -97,6 +97,8 @@ Highcharts Widget
         y :: Number
     }
     ```
+
+- `selectedFilters`: When the user clicks a point filter data will be sent.
 
 ## Usage
 
