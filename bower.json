@@ -2,7 +2,7 @@
     "name": "highcharts-widget",
     "dependencies": {
         "jquery": null,
-        "highcharts": "~4.2.1"
+        "highcharts": "5.0.2"
     },
     "devDependencies": {},
     "exportsOverride": {
