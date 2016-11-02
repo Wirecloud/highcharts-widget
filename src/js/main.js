@@ -1,4 +1,5 @@
-/*globals $, MashupPlatform */
+/* globals $, MashupPlatform */
+
 window.onload = function () {
     "use strict";
 
@@ -25,14 +26,30 @@ window.onload = function () {
     };
 
     MashupPlatform.wiring.registerCallback("highcharts", function (data) {
-        var jdata = JSON.parse(data);
-        jdata = hijackEvents(jdata);
-        $("#container").highcharts(jdata);
+
+        if (typeof data === "string") {
+            try {
+                data = JSON.parse(data);
+            } catch (e) {
+                throw new MashupPlatform.wiring.EndpointTypeError("Event data must be encoded using JSON");
+            }
+        }
+
+        data = hijackEvents(data);
+        $("#container").highcharts(data);
     });
 
     MashupPlatform.wiring.registerCallback("highstock", function (data) {
-        var jdata = JSON.parse(data);
-        jdata = hijackEvents(jdata);
-        $("#container").highcharts("StockChart", jdata);
+
+        if (typeof data === "string") {
+            try {
+                data = JSON.parse(data);
+            } catch (e) {
+                throw new MashupPlatform.wiring.EndpointTypeError("Event data must be encoded using JSON");
+            }
+        }
+
+        data = hijackEvents(data);
+        $("#container").highcharts("StockChart", data);
     });
 };
