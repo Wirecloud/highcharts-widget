@@ -21,7 +21,7 @@
       <outputendpoint name="selected" type="text" label="Selected data output" description="Send the data when it's clicked" friendcode="selected-data"/>
     </wiring>
 
-    <contents src="index.html"/>
+    <contents src="index.html" useplatformstyle="true"/>
     <rendering height="300px" width="300px"/>
 
 </widget>
