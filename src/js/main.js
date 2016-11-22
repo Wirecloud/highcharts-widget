@@ -6,11 +6,12 @@ window.onload = function () {
     $("#container").highcharts({});
 
     var sendData = function sendData(data) {
-        var toSend = {};
-        toSend.category = data.category || "";
-        toSend.percentage = data.percentage || 0.0;
-        toSend.x = data.x;
-        toSend.y = data.y;
+        var toSend = {
+            category: data.category || "",
+            percentage: data.percentage || 0.0,
+            x: data.x,
+            y: data.y
+        };
         MashupPlatform.wiring.pushEvent("selected", JSON.stringify(toSend));
     };
 
