@@ -24,6 +24,23 @@ window.onload = function () {
         data.plotOptions.series.point.events.click = function (e) {
             sendData(this); // this :: Point
         };
+
+        if ("chart" in data) {
+            data.chart = {};
+        }
+        if ("events" in data.chart) {
+            data.chart.events = {};
+        }
+
+        data.chart.events.load = function () {
+            this.credits.element.onclick = function () {
+                window.open(
+                    event.target.options.credits.href,
+                    '_blank'
+                );
+            };
+        };
+
         return data;
     };
 
