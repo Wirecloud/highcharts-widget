@@ -1,4 +1,4 @@
-## v0.1.1
+## v0.1.1 (2016-11-29)
 
 - Upgraded to Highcharts 5.0.2
 - Added experimental support for object event payloads on the wiring input
