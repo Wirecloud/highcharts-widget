@@ -25,14 +25,14 @@ window.onload = function () {
             sendData(this); // this :: Point
         };
 
-        if ("chart" in data) {
+        if (!("chart" in data)) {
             data.chart = {};
         }
-        if ("events" in data.chart) {
+        if (!("events" in data.chart)) {
             data.chart.events = {};
         }
 
-        data.chart.events.load = function () {
+        data.chart.events.load = function (event) {
             this.credits.element.onclick = function () {
                 window.open(
                     event.target.options.credits.href,
