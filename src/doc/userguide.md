@@ -1,6 +1,6 @@
 ## Introduction
 
-Highcharts Widget
+Create interactive charts/graphs using the Highcharts framework
 
 ## Settings
 

@@ -1,7 +1,7 @@
 HighCharts Widget widget
 ======================
 
-The HighCharts Widget widget is a WireCloud widget that provides ...
+This widget allows to create interactive charts/graphs using the Highcharts framework
 
 Build
 -----
