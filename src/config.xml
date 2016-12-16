@@ -10,7 +10,7 @@
         <description>Create interactive charts/graphs using the Highcharts framework</description>
         <longdescription>DESCRIPTION.md</longdescription>
         <changelog>doc/changelog.md</changelog>
-        <doc>doc/index.md</doc>
+        <doc>doc/userguide.md</doc>
         <license>CC,BY-NC,3.0</license>
         <issuetracker>https://github.com/Wirecloud/highcharts-widget/issues</issuetracker>
     </details>

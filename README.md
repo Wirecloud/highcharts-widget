@@ -41,40 +41,13 @@ grunt
 
 If everything goes well, you will find a wgt file in the `dist` folder.
 
-## Settings
+## Documentation
 
-`No settings`
-
-## Wiring
-
-### Input Endpoints
-
-- `highcharts`: Use this input endpoint if you want to draw a Highchart chart.
-
-    More information: http://api.highcharts.com/highcharts
-
-- `highstock`: Use this input endpoint if you want to draw a Highstock chart.
-
-    More information: http://api.highcharts.com/highstock
-
-### Output Endpoints
-
-- `selected`: When the user click a point the data will be sended.
-
-    Data sended:
-
-    ```
-    {
-        category :: String | Number,
-        percentage :: Number,
-        x :: Number,
-        y :: Number
-    }
-    ```
-
-## Usage
-
-The only one limitation right now are that you can't send functions (formatters, events, ...) because the wiring only send Strings
+Documentation about how to use this widget is available on the
+[User Guide](src/doc/userguide.md). Anyway, you can find general information
+about how to use widgets on the
+[WireCloud's User Guide](https://wirecloud.readthedocs.io/en/stable/user_guide/)
+available on Read the Docs.
 
 ## Reference
 
