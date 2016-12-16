@@ -1,17 +1,6 @@
-/*global $, MashupPlatform, MockMP, HighchartsWidget, beforeAll, afterAll, beforeEach*/
+/* globals MashupPlatform, MockMP, beforeAll, beforeEach, it, expect, describe*/
 (function () {
     "use strict";
-
-    jasmine.getFixtures().fixturesPath = 'src/test/fixtures/';
-
-    var dependencyList = [
-        'script',
-        'div',
-    ];
-
-    var clearDocument = function clearDocument() {
-        $('body > *:not(' + dependencyList.join(', ') + ')').remove();
-    };
 
     describe("Test HighchartsWidget", function () {
         // var widget;
@@ -21,7 +10,7 @@
 
         beforeEach(function () {
             MashupPlatform.reset();
-            //widget = new HighchartsWidget();
+            // widget = new HighchartsWidget();
         });
 
         it("Dummy test", function () {
