@@ -6,13 +6,18 @@ window.onload = function () {
     $("#container").highcharts({});
     $("#message-container").hide();
 
-    var sendData = function sendData(data) {
-        var toSend = {
-            category: data.category || "",
-            percentage: data.percentage || 0.0,
-            x: data.x,
-            y: data.y
-        };
+    var sendData = function sendData(data, dataHandler) {
+        var toSend;
+        if (dataHandler != null) {
+            toSend = dataHandler(data)
+        } else {
+            toSend = {
+                category: data.category || "",
+                percentage: data.percentage || 0.0,
+                x: data.x,
+                y: data.y
+            };
+        }
         MashupPlatform.wiring.pushEvent("selected", JSON.stringify(toSend));
     };
 
@@ -22,7 +27,7 @@ window.onload = function () {
         data.plotOptions.series.point = data.plotOptions.series.point || {};
         data.plotOptions.series.point.events = {}; // Let's clean all the events because can't be sended via wiring
         data.plotOptions.series.point.events.click = function (e) {
-            sendData(this); // this :: Point
+            sendData(this, data.dataHandler); // this :: Point
         };
 
         if (!("chart" in data)) {
