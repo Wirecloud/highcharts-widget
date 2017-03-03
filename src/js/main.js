@@ -17,8 +17,9 @@ window.onload = function () {
                 x: data.x,
                 y: data.y
             };
+            toSend = JSON.stringify(toSend);
         }
-        MashupPlatform.wiring.pushEvent("selected", JSON.stringify(toSend));
+        MashupPlatform.wiring.pushEvent("selected", toSend);
     };
 
     var hijackEvents = function hijackEvents(data) {
