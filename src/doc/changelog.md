@@ -1,3 +1,8 @@
+## v0.1.3 (2018-11-26)
+
+- Upgraded to Highcharts 6.2.0
+- Add support for solid gauge charts.
+
 ## v0.1.2 (2016-11-30)
 
 - Fix added the feature of opening Highcharts credits on a new tab.
