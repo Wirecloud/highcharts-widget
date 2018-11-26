@@ -16,7 +16,8 @@
                 "highcharts-more.js",
                 "highstock.js",
                 "modules/data.js",
-                "modules/drilldown.js"
+                "modules/drilldown.js",
+                "modules/solid-gauge.js"
             ]
         }
     }

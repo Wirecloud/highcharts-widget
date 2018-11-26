@@ -73,7 +73,6 @@ window.onload = function () {
             $("#container").highcharts(data);
         }
 
-        $("#container").highcharts(data);
     });
 
     MashupPlatform.wiring.registerCallback("highstock", function (data) {
