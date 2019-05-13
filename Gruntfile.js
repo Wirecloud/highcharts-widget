@@ -131,47 +131,6 @@ module.exports = function (grunt) {
             }
         },
 
-        jasmine: {
-            test: {
-                src: ['src/js/*.js', '!src/js/main.js'],
-                options: {
-                    specs: 'src/test/js/*Spec.js',
-                    helpers: ['src/test/helpers/*.js'],
-                    vendor: ['node_modules/jquery/dist/jquery.js',
-                        'node_modules/jasmine-jquery/lib/jasmine-jquery.js',
-
-                        'node_modules/mock-applicationmashup/lib/vendor/mockMashupPlatform.js',
-                        'src/test/vendor/*.js'
-                    ]
-                }
-            },
-            coverage: {
-                src: '<%= jasmine.test.src %>',
-                options: {
-                    helpers: '<%= jasmine.test.options.helpers %>',
-                    specs: '<%= jasmine.test.options.specs %>',
-                    vendor: '<%= jasmine.test.options.vendor %>',
-                    template: require('grunt-template-jasmine-istanbul'),
-                    templateOptions: {
-                        coverage: 'build/coverage/json/coverage.json',
-                        report: [{
-                            type: 'html',
-                            options: {
-                                dir: 'build/coverage/html'
-                            }
-                        }, {
-                            type: 'cobertura',
-                            options: {
-                                dir: 'build/coverage/xml'
-                            }
-                        }, {
-                            type: 'text-summary'
-                        }]
-                    }
-                }
-            }
-        },
-
         wirecloud: {
             options: {
                 overwrite: false
@@ -184,7 +143,6 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-wirecloud');
     grunt.loadNpmTasks('grunt-bower-task');
-    grunt.loadNpmTasks('grunt-contrib-jasmine'); // when test?
     grunt.loadNpmTasks('gruntify-eslint');
     grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.loadNpmTasks('grunt-contrib-copy');
@@ -195,7 +153,6 @@ module.exports = function (grunt) {
     grunt.registerTask('test', [
         'bower:install',
         'eslint',
-        'jasmine:coverage'
     ]);
 
     grunt.registerTask('build', [
