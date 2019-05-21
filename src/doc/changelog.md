@@ -1,3 +1,8 @@
+## v0.1.4 (2019-05-21)
+
+Minor bug fix release.
+
+
 ## v0.1.3 (2018-11-26)
 
 - Upgraded to Highcharts 6.2.0
